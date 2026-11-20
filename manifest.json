@@ -1,0 +1,14 @@
+{
+  "name": "Destrav TCC — Mapeie o que te trava. Avance.",
+  "short_name": "Destrav TCC",
+  "description": "Automonitoramento da procrastinação baseado em conceitos de TCC: mapa de situações, hierarquia, experimentos, rotinas e calendário.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F6FBFA",
+  "theme_color": "#13706B",
+  "lang": "pt-BR",
+  "icons": [
+    { "src": "assets/logo.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Destrav TCC — Mapeie o que te trava. Avance.</title>
+<meta name="description" content="Destrav TCC é um app de automonitoramento da procrastinação baseado em conceitos de TCC: mapa de situações, hierarquia, primeiro passo, experimentos comportamentais, rotinas, calendário e relatório em PDF para a terapia. Offline, para iPhone, iPad e Android." />
+<meta name="author" content="Luís Henrique Martins Gonçalves" />
+<link rel="canonical" href="https://drluishmg-code.github.io/destravtcc/index.html" />
+<meta name="robots" content="index, follow" />
+
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+<link rel="manifest" href="manifest.json" />
+<meta name="theme-color" content="#13706b" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Destrav TCC — Mapeie o que te trava. Avance." />
+<meta property="og:description" content="Destrav TCC é um app de automonitoramento da procrastinação baseado em conceitos de TCC: mapa de situações, hierarquia, primeiro passo, experimentos comportamentais, rotinas, calendário e relatório em PDF para a terapia. Offline, para iPhone, iPad e Android." />
+<meta property="og:image" content="https://drluishmg-code.github.io/destravtcc/assets/social-preview.png" />
+<meta property="og:url" content="https://drluishmg-code.github.io/destravtcc/index.html" />
+<meta property="og:locale" content="pt_BR" />
+<meta property="og:site_name" content="Destrav TCC" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Destrav TCC — Mapeie o que te trava. Avance." />
+<meta name="twitter:description" content="Destrav TCC é um app de automonitoramento da procrastinação baseado em conceitos de TCC: mapa de situações, hierarquia, primeiro passo, experimentos comportamentais, rotinas, calendário e relatório em PDF para a terapia. Offline, para iPhone, iPad e Android." />
+<meta name="twitter:image" content="https://drluishmg-code.github.io/destravtcc/assets/social-preview.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "Destrav TCC",
+  "applicationCategory": "HealthApplication",
+  "operatingSystem": "iOS, Android",
+  "description": "Aplicativo de automonitoramento da procrastinação baseado em conceitos de Terapia Cognitivo-Comportamental: mapa de situações, hierarquia, experimentos comportamentais, previsão × realidade, rotinas, calendário e relatório em PDF para a terapia. Funciona offline.",
+  "author": { "@type": "Person", "name": "Luís Henrique Martins Gonçalves" }
+}
+</script>
+</head>
+<body>
+
+<a class="visually-hidden" href="#main">Pular para o conteúdo</a>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="nav-brand">
+      <img src="assets/logo.png" alt="" width="28" height="28" />
+      <span>Destrav TCC</span>
+    </a>
+
+    <nav class="nav-links" aria-label="Navegação principal">
+      <a href="#recursos">Recursos</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#capturas">Capturas</a>
+      <a href="contact.html">Contato</a>
+    </nav>
+
+    <div class="nav-secondary-links" aria-label="Navegação legal">
+      <a href="privacy.html">Política de Privacidade</a>
+      <a href="terms.html">Termos</a>
+    </div>
+
+    <div class="nav-cta">
+      <a href="#download" class="btn btn-primary" style="padding:0.6rem 1.2rem; font-size:0.88rem;">Baixar</a>
+      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navDrawer">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="nav-drawer" id="navDrawer">
+    <a href="#recursos">Recursos</a>
+    <a href="#como-funciona">Como funciona</a>
+    <a href="#capturas">Capturas</a>
+    <a href="contact.html">Contato</a>
+    <a href="privacy.html">Política de Privacidade</a>
+    <a href="terms.html">Termos de Uso</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <svg class="hero-ecg" viewBox="0 0 600 90" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 78 H90 V64 H180 V50 H270 V36 H360 V22 H450 V8 H600" />
+    </svg>
+
+    <div class="container">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">Automonitoramento da procrastinação · baseado em conceitos de TCC</span>
+        <h1>Destrav TCC</h1>
+        <p class="lede-title">Mapeie o que te trava. Avance.</p>
+        <p class="lede">Transforme “eu procrastino” em situações concretas, entenda o ciclo que mantém a esquiva e treine começar — um primeiro passo de cada vez. Com experimentos comportamentais, previsão × realidade, rotinas, calendário e um relatório em PDF para levar à terapia. Tudo offline, no iPhone, no iPad ou no Android.</p>
+
+        <div class="hero-actions">
+          <!-- BOTOES-LOJA: para ativar, rode ferramentas/publicar-lojas.py -->
+          <div class="store-actions">
+            <a href="#" class="store-btn is-soon" aria-disabled="true" onclick="return false;" aria-label="Em breve na App Store">
+              <span class="store-btn-soon-tag">Em breve</span>
+              <svg viewBox="0 0 384 512" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141 4 184.8 4 273.7q0 39.4 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.1zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+              <span class="store-btn-copy">
+                <small>Baixe em breve na</small>
+                <strong>App Store</strong>
+              </span>
+            </a>
+
+            <a href="#" class="store-btn is-soon" aria-disabled="true" onclick="return false;" aria-label="Em breve no Google Play">
+              <span class="store-btn-soon-tag">Em breve</span>
+              <svg viewBox="0 0 512 512" aria-hidden="true"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>
+              <span class="store-btn-copy">
+                <small>Baixe em breve no</small>
+                <strong>Google Play</strong>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-meta">
+          <div>
+            <strong>0–10</strong>
+            <span>hierarquia de situações, degrau por degrau</span>
+          </div>
+          <div>
+            <strong>Previsto × real</strong>
+            <span>experimentos que mostram o que você aprende</span>
+          </div>
+          <div>
+            <strong>PDF</strong>
+            <span>relatório pronto para a sua terapia</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-figure reveal">
+        <img src="assets/screenshots/mapa.jpg" alt="Tela principal do Destrav TCC com o mapa de situações" class="hero-app-image">
+        <div class="floating-chip chip-1"><span class="dot green"></span> Tudo salvo no aparelho</div>
+        <div class="floating-chip chip-2"><span class="dot blue"></span> PT · EN · ES</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TRUST BAR ===================== -->
+  <div class="trust-bar">
+    <div class="container">
+      <ul>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--color-blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+          Baseado em conceitos de Terapia Cognitivo-Comportamental
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--color-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4v-4h4v-4h4V8h4"/></svg>
+          Exposição gradual ao início da tarefa
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--color-red)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M8 8V6a4 4 0 0 1 8 0v2"/></svg>
+          Sem cadastro: nada sai do aparelho sem você exportar
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ===================== RECURSOS ===================== -->
+  <section class="section" id="recursos">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Recursos</span>
+        <h2>Não é mais uma lista de tarefas</h2>
+        <p class="lede">O Destrav TCC trabalha o que acontece antes da tarefa: o desconforto de começar, a esquiva e o alívio que fazem o ciclo se repetir.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <div class="feature-icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15M15 6v15"/></svg></div>
+          <h3>Mapa de situações</h3>
+          <p>Cadastre situações concretas que você evita — “abrir o documento do TCC”, não só “procrastinar” — com contexto, pensamento automático e emoção.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 4v5h-5"/></svg></div>
+          <h3>Ciclo de esquiva</h3>
+          <p>Registre o que você faz no lugar, o alívio imediato e o custo depois. O ciclo que mantém a procrastinação fica visível.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4v-4h4v-4h4V8h4"/></svg></div>
+          <h3>Hierarquia de 0 a 10</h3>
+          <p>Cada situação ganha nível, prioridade e um primeiro passo mínimo. Você sobe um degrau quando ficar fácil e desce quando sempre evitar.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6"/><path d="M10 3v6L5 18a2 2 0 0 0 1.7 3h10.6a2 2 0 0 0 1.7-3L14 9V3"/></svg></div>
+          <h3>Experimentos comportamentais</h3>
+          <p>Planeje o passo, preveja o desconforto e depois registre o que de fato aconteceu. O app compara previsto × real e mostra o que você está aprendendo.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+          <h3>Previsão × Realidade</h3>
+          <p>Escreva o que você acha que vai acontecer — “vou passar vergonha” — e, na data, revisite. Com o tempo você vê o quanto suas previsões erram.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2l4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14"/><path d="M7 22l-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/></svg></div>
+          <h3>Rotinas com lembretes</h3>
+          <p>Ações recorrentes — diárias, semanais, quinzenais ou personalizadas — com alertas, observação por dia e marcação de feito.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+          <h3>Calendário integrado</h3>
+          <p>Prazos, experimentos e rotinas no mesmo calendário. Toque num dia para ver tudo e adicionar algo, inclusive em dias passados.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></div>
+          <h3>Relatório para a terapia</h3>
+          <p>Gere um PDF organizado, com período e itens escolhidos, para levar à sua psicóloga, terapeuta ou médico — feito para quem não conhece o app.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg></div>
+          <h3>Lembretes de início</h3>
+          <p>Notificações para tentar começar a situação escolhida, nos horários que você definir.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2"/></svg></div>
+          <h3>Temas e idiomas</h3>
+          <p>Tema sépia, claro ou escuro. Português, inglês e espanhol.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 2l20 20"/><path d="M8.5 16.5a5 5 0 0 1 7 0"/><path d="M5 12.9a10 10 0 0 1 5.2-2.8"/><path d="M10.7 5.1A15 15 0 0 1 22 8.8"/><path d="M12 20h.01"/></svg></div>
+          <h3>100% offline</h3>
+          <p>Sem cadastro, sem login, sem servidor. Tudo funciona sem internet.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M8 8V6a4 4 0 0 1 8 0v2"/></svg></div>
+          <h3>Seus dados ficam com você</h3>
+          <p>Tudo fica salvo só no aparelho. Backup e relatórios saem apenas quando você exporta e escolhe com quem compartilhar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== COMO FUNCIONA ===================== -->
+  <section class="section section-alt" id="como-funciona">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Como funciona</span>
+        <h2>Mapear → hierarquizar → experimentar → avançar</h2>
+        <p class="lede">O alvo inicial é treinar o começar, não maximizar a produtividade. A tarefa deve gerar algum desconforto, mas continuar executável.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <div class="feature-icon blue" style="font-family:var(--font-mono);font-weight:700;font-size:1.1rem;">1</div>
+          <h3>Mapear</h3>
+          <p>Liste situações concretas que você evita e o que acontece quando pensa em começar.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon green" style="font-family:var(--font-mono);font-weight:700;font-size:1.1rem;">2</div>
+          <h3>Hierarquizar</h3>
+          <p>Dê a cada situação um nível de 0 a 10. O app calcula uma prioridade para organizar o trabalho.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon red" style="font-family:var(--font-mono);font-weight:700;font-size:1.1rem;">3</div>
+          <h3>Escolher um primeiro passo</h3>
+          <p>Um passo pequeno o bastante para ser feito mesmo com desconforto: “abrir o arquivo e escrever 3 frases”.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon blue" style="font-family:var(--font-mono);font-weight:700;font-size:1.1rem;">4</div>
+          <h3>Experimentar</h3>
+          <p>Preveja quanto desconforto vai sentir e quanto tempo vai durar. Depois, faça.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon green" style="font-family:var(--font-mono);font-weight:700;font-size:1.1rem;">5</div>
+          <h3>Registrar e aprender</h3>
+          <p>Anote o que aconteceu. O app compara previsto × real e mostra seus padrões.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon red" style="font-family:var(--font-mono);font-weight:700;font-size:1.1rem;">6</div>
+          <h3>Avançar</h3>
+          <p>Ficou fácil e consistente? Suba um degrau. Sempre evita? Desça um. Um passo de cada vez.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CAPTURAS DE TELA ===================== -->
+  <section class="section" id="capturas">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Capturas</span>
+        <h2>O aplicativo em ação</h2>
+        <p class="lede">Do mapa de situações ao relatório para a terapia — exemplos com dados fictícios de quem está escrevendo um TCC.</p>
+      </div>
+
+      <div class="screens-gallery">
+        <figure class="screen-card reveal">
+          <img src="assets/screenshots/mapa.jpg" alt="Mapa de situações do Destrav TCC, ordenadas por prioridade">
+          <figcaption>Mapa: situações por prioridade, com o primeiro passo</figcaption>
+        </figure>
+        <figure class="screen-card reveal">
+          <img src="assets/screenshots/situacao.jpg" alt="Formulário de uma situação com o ciclo de esquiva">
+          <figcaption>O ciclo: pensamento, emoção, esquiva, alívio e custo</figcaption>
+        </figure>
+        <figure class="screen-card reveal">
+          <img src="assets/screenshots/experimentos.jpg" alt="Histórico de experimentos com previsão × realidade">
+          <figcaption>Experimentos: o previsto × o que aconteceu</figcaption>
+        </figure>
+        <figure class="screen-card reveal">
+          <img src="assets/screenshots/rotinas.jpg" alt="Rotinas do dia com lembretes">
+          <figcaption>Rotinas do dia, com observação por ocorrência</figcaption>
+        </figure>
+        <figure class="screen-card reveal">
+          <img src="assets/screenshots/calendario.jpg" alt="Calendário com prazos, experimentos e rotinas">
+          <figcaption>Calendário: prazos, experimentos e rotinas juntos</figcaption>
+        </figure>
+        <figure class="screen-card reveal">
+          <img src="assets/screenshots/previsoes.jpg" alt="Previsões aguardando revisão e estatísticas">
+          <figcaption>Previsão × Realidade e o que seus registros mostram</figcaption>
+        </figure>
+        <figure class="screen-card reveal">
+          <img src="assets/screenshots/exportar.jpg" alt="Exportação do relatório em PDF para terapia">
+          <figcaption>Relatório em PDF para levar à terapia</figcaption>
+        </figure>
+        <figure class="screen-card reveal">
+          <img src="assets/screenshots/calendario-escuro.jpg" alt="Calendário no tema escuro">
+          <figcaption>Tema escuro, sépia ou claro</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SOBRE ===================== -->
+  <section class="section section-alt" id="sobre">
+    <div class="container about-grid">
+      <div class="about-visual reveal">
+        <div class="stat-row"><strong>6</strong><span>áreas: Mapa, Experimentos, Rotinas, Calendário, Previsões e Configurações</span></div>
+        <div class="stat-row"><strong>3</strong><span>idiomas: português, inglês e espanhol</span></div>
+        <div class="stat-row"><strong>0</strong><span>cadastros, logins ou servidores</span></div>
+      </div>
+
+      <div class="about-copy reveal">
+        <span class="eyebrow">Sobre o projeto</span>
+        <h2>Procrastinar não é preguiça. É um ciclo.</h2>
+        <p>Tarefa → desconforto → esquiva → alívio imediato → custo posterior → mais chance de esquivar de novo. O Destrav TCC foi feito para tornar esse ciclo visível e treinar, aos poucos, o começar apesar do desconforto.</p>
+        <p>Ele organiza conceitos usados na Terapia Cognitivo-Comportamental — automonitoramento, hierarquia, exposição gradual e experimentos comportamentais — numa ferramenta simples para o dia a dia, do TCC da faculdade à tese, ao trabalho ou aos estudos.</p>
+        <p>Os registros são seus. Quando fizer sentido, gere um relatório e leve à sua psicóloga, terapeuta ou médico.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== AVISO IMPORTANTE ===================== -->
+  <section class="section">
+    <div class="container">
+      <div class="notice reveal">
+        <div class="notice-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>
+        </div>
+        <div>
+          <h3>Aviso importante</h3>
+          <p>O Destrav TCC é uma ferramenta de automonitoramento baseada em conceitos de TCC. Não faz diagnóstico, não é tratamento e não substitui a avaliação ou o acompanhamento de um profissional de saúde mental. As notas de 0 a 10 são registros seus, não uma escala clínica validada.</p>
+          <p>Se você estiver em sofrimento intenso ou pensando em se machucar, procure ajuda: no Brasil, o CVV atende 24 horas pelo telefone 188 ou em cvv.org.br; em emergência, ligue 192 (SAMU).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA FINAL / DOWNLOAD ===================== -->
+  <section class="section section-alt" id="download">
+    <div class="container">
+      <div class="final-cta reveal">
+        <span class="eyebrow">Para iPhone, iPad e Android</span>
+        <h2>Destrave o primeiro passo</h2>
+        <p class="lede">Em breve na App Store e no Google Play. Tudo funciona offline e fica salvo no seu aparelho.</p>
+        <div class="hero-actions">
+          <!-- BOTOES-LOJA: para ativar, rode ferramentas/publicar-lojas.py -->
+          <div class="store-actions" style="justify-content:center;">
+            <a href="#" class="store-btn is-soon" aria-disabled="true" onclick="return false;" aria-label="Em breve na App Store">
+              <span class="store-btn-soon-tag">Em breve</span>
+              <svg viewBox="0 0 384 512" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141 4 184.8 4 273.7q0 39.4 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.1zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+              <span class="store-btn-copy">
+                <small>Baixe em breve na</small>
+                <strong>App Store</strong>
+              </span>
+            </a>
+
+            <a href="#" class="store-btn is-soon" aria-disabled="true" onclick="return false;" aria-label="Em breve no Google Play">
+              <span class="store-btn-soon-tag">Em breve</span>
+              <svg viewBox="0 0 512 512" aria-hidden="true"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>
+              <span class="store-btn-copy">
+                <small>Baixe em breve no</small>
+                <strong>Google Play</strong>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="container">
+    <svg class="ecg-divider" viewBox="0 0 800 24" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 20 H260 V16 H340 V12 H420 V8 H500 V4 H800"/>
+    </svg>
+
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">
+          <img src="assets/logo.png" alt="" width="26" height="26" />
+          <span>Destrav TCC</span>
+        </div>
+        <p class="footer-tagline">Mapeie o que te trava. Avance.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="#recursos">Recursos</a></li>
+          <li><a href="#como-funciona">Como funciona</a></li>
+          <li><a href="#capturas">Capturas</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Política de Privacidade</a></li>
+          <li><a href="terms.html">Termos de Uso</a></li>
+          <li><a href="contact.html">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Luís Henrique Martins Gonçalves. Todos os direitos reservados.</span>
+      <span>Um passo de cada vez.</span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Voltar ao topo">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
