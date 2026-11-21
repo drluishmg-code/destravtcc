@@ -1452,3 +1452,11 @@ p {
 html, body {
   overflow-x: clip;
 }
+
+/* botões das lojas: no celular ficam centralizados, inclusive quando quebram em duas linhas */
+@media (max-width: 860px) {
+  .store-actions {
+    justify-content: center;
+    width: 100%;
+  }
+}
